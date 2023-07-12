@@ -1,0 +1,5 @@
+h1 {
+  padding: 10px;
+  background-color: rebeccapurple !important; /* important 명령으로 우선 순위를 높여줌*/
+  color: #fff;
+}

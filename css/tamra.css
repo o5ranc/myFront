@@ -1,0 +1,61 @@
+#container {
+  width: 700px; /* 셀 안쪽의 여백(패딩) */
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid #222; /* 표 테두리 */
+  border-collapse: collapse; /* 테두리 1줄만 표시 */
+}
+
+th {
+  background-color: aquamarine;
+}
+
+th, td {
+  padding: 10px; /* 셀 안쪽의 여백(패딩) */
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #bbdefb;
+}
+tbody tr:nth-child(2n+1) {
+  background-color: #e3f2fd;
+}
+
+h1 {
+  color: brown;
+}
+
+h2 {
+  color: rgb(0, 0, 255);
+}
+
+ul, ol {
+  color: green;
+}
+
+/* #alink {
+  text-decoration-line: none;
+} */
+a {
+  text-decoration-line: none;
+}
+
+.small-line {
+  line-height: 0.7;
+  text-align: justify;
+}
+
+.big-line {
+  line-height: 2.5;
+  text-align: justify; /* 내용이 긴경우 끝을 */
+}
+
+dt {
+  letter-spacing: 0.5em;
+}
+
+dd {
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+    }
+
+    #container #flex {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 50px auto;
+    }
+
+    ul li {
+      list-style: none;
+      width : 20%; height: 50px;
+    }
+
+    .menu {
+      background-color: lightgray;
+      border: 1px solid black;
+      width: 15%; height: 50px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    ul li:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    ul li:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    ul li:nth-child(3):hover {
+      transition-property: all;
+      transition-duration: 1s;
+      transition-timing-function: ease-in;
+      background-color: black; color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <!-- <div class="menu radius-left">메뉴1</div>
+    <div class="menu">메뉴2</div>
+    <div class="menu" id="menu3">메뉴3</div>
+    <div class="menu">메뉴4</div>
+    <div class="menu">메뉴5</div>
+    <div class="menu radius-right">메뉴6</div> -->
+    <nav>
+      <ul id="flex">
+        <li class="menu">메뉴1</li>
+        <li class="menu">메뉴2</li>
+        <li class="menu">메뉴3</li>
+        <li class="menu">메뉴4</li>
+        <li class="menu">메뉴5</li>
+        <li class="menu">메뉴6</li>
+      </ul>
+    </nav>
+  </div>
+  
+</body>
+</html>

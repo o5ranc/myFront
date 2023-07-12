@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+    }
+    img {
+      animation: rotate 3s infinite;
+      border-radius: 50%;
+      box-shadow: 
+      2px 2px 2px 2px black,
+      5px 5px 5px 5px gray,
+      8px 8px 8px 8px darkgray,
+      10px 10px 10px 10px lightgray;
+    }
+
+    @keyframes rotate {
+      from { transform: perspective(200px) rotateY(0deg); }
+      50%  { transform: perspective(200px) rotateY(-50deg); }
+      to   { transform: perspective(200px) rotateY(50deg); }
+    }
+  </style>
+</head>
+<body>
+  <img src="../images/bear.jpg" alt="">
+  
+</body>
+</html>

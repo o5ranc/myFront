@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; 
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* ===================================== 
+    헤더영역
+======================================== */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: mediumaquamarine;
+}
+
+#header_logo h1 {
+  float: left;
+  width: 280px;
+  height: 100px;
+  padding-left: 20px;
+  color: white;
+  font-size: 3em;
+  font-family: 'Frank Ruhl Libre', serif;
+  line-height: 100px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #222;;
+}
+
+/* ===================================== 
+    네비게이션
+======================================== */
+nav{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:900px;   /*   너비 */  
+  height:100px;   /* 메뉴 영역 높이 */  
+  padding-top:40px;  /* 메뉴를 아래로 내리기 위해 */  
+}
+
+#top_menu {
+  height: 60px;
+  
+}
+
+#top_menu > li {
+  float: left;
+  position: relative; 
+}
+
+#top_menu > li > a {
+  display: block;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 1px #07c;
+  padding: 20px 60px;
+}
+
+#top_menu > li > a:hover {
+  color: black;
+  text-shadow: 0 -1px #07c;
+}
+
+#top_menu > li > ul {
+  /* display: none; */
+  position: absolute;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.6);
+  left: 20px;
+  margin: 0;
+}
+
+#top_menu > li > ul > li {
+  padding: 10px 10px 10px 30px;
+}
+
+#top_menu > li > ul > li > a:hover {
+  color: red;
+}
+
+#top_menu > li:hover > ul {
+  display: block;
+  z-index:10;
+}
+
+/* ===================================== 
+    이미지 슬라이더 영역
+======================================== */
+#header_slide {
+  clear: both;
+  width: 100%;
+  height: 300px;
+  background-color: orange;
+  overflow: hidden;
+  position: relative;
+}
+
+#slides {
+  position: absolute;
+  height: 100%;
+}
+
+#sliders > img {
+  float: left;
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  color: #222;
+  font-weight: 800;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ===================================== 
+    컨텐츠 영역
+======================================== */
+#contents {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery {
+  display: block;
+}
+
+#contents_tabmenu {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#contents_tabmenu input[type="radio"] {
+  display: none;
+}
+
+#contents_tabmenu label {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align:center;
+  color:#aaa;
+  border: 1px solid transparent;
+}
+
+#contents_tabmenu label:hover {
+  color: #222;
+  cursor: pointer;
+}
+
+#contents_tabmenu input:checked + label{
+  color: #b00;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.tab_content {
+  display: none; 
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+.tab_content h2 {
+  display: none;
+}
+
+#notice ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+#notice ul li {
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+/* #gallery ul li {
+  display:none;
+}
+*/
+#notice {
+  display:none;
+} 
+
+#links {
+  float:right;
+  width: 600px;
+  height: 100%;
+} 
+
+#links ul {
+  padding: 0;
+  overflow: hidden;
+} 
+
+#links ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#links ul li a span {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  line-height: 150px;
+}
+
+#quick-icon1 {
+  background-image: url("../images/icon-1.jpg");
+}
+#quick-icon2 {
+  background-image: url("../images/icon-2.jpg");
+}
+#quick-icon3 {
+  background-image: url("../images/icon-3.jpg");
+}
+
+/* 이미지 슬라이드 쇼 영역 */
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  /* background-color: cornflowerblue; */
+  border-top: 2px solid #222;
+}
+
+#bottom_menu {
+  width:100%;
+  height: 20px;
+  position: relative;
+}
+
+#bottom_menu ul {
+  margin-top: 15px;
+}
+
+#bottom_menu ul li {
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+}
+
+#bottom_menu ul li:last-child {
+  border: 0;
+}
+
+#bottom_menu ul li a,
+#bottom_menu ul li a:visited {
+  font-size: 15px;
+  color: #666;
+}
+
+#sns {
+  position: absolute;
+  right: 0;
+}
+
+#sns ul li {
+  border: none;
+  padding: 5px;
+}
+
+#company {
+  clear: both;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* #sns {
+  width: 50%;
+  height: 20px;
+  position: relative;
+} */
